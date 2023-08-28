@@ -16,21 +16,39 @@ body {
 	width: 210mm;
 	height: 297mm;
 	margin: 20mm auto;
-	padding: 40px;
+	padding: $resume-gap;
 	background-color: $white;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume__section {
+	margin-bottom: $resume-gap;
 }
 
 .resume__top {
 	display: grid;
 	grid-template-columns: 160px 1fr;
 	align-items: center;
-	column-gap: 40px;
-	margin-bottom: 40px;
+	column-gap: $resume-gap;
 }
 
+// .resume__name {
+// 	position: relative;
+// 	display: inline-block;
+// 	&::before {
+// 		content: '';
+// 		height: 50%;
+// 		width: calc(100% + 20px);
+// 		position: absolute;
+// 		left: -10px;
+// 		bottom: -10px;
+// 		z-index: -1;
+// 		background-color: rgba($black, 0.05);
+// 	}
+// }
+
 .resume__position {
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 }
 
 .resume__photo {
@@ -41,4 +59,24 @@ body {
 	margin-right: 8px;
 	transform: translateY(3px);
 	display: inline-block;
+}
+
+.resume__main {
+	display: grid;
+	grid-template-columns: 0.66fr 1.33fr;
+	column-gap: $resume-gap;
+}
+
+.module__heading {
+	margin-bottom: 8px;
+	display: inline-block;
+}
+
+.module__list {
+	list-style-type: disc;
+	padding-left: 18px;
+}
+
+.module__item::marker {
+	color: rgba($black, 0.4);
 }
