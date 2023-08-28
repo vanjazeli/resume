@@ -1,0 +1,44 @@
+// ========================================
+// resume
+// ========================================
+
+@page {
+	size: A4;
+	margin: 0;
+}
+
+body {
+	background-color: $grey-mid;
+	font-family: 'Inter', sans-serif;
+}
+
+.resume {
+	width: 210mm;
+	height: 297mm;
+	margin: 20mm auto;
+	padding: 40px;
+	background-color: $white;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume__top {
+	display: grid;
+	grid-template-columns: 160px 1fr;
+	align-items: center;
+	column-gap: 40px;
+	margin-bottom: 40px;
+}
+
+.resume__position {
+	margin-bottom: 10px;
+}
+
+.resume__photo {
+	height: 160px;
+}
+
+.resume__contact-icon {
+	margin-right: 8px;
+	transform: translateY(3px);
+	display: inline-block;
+}
