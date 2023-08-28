@@ -16,7 +16,7 @@ body {
 	width: 210mm;
 	height: 297mm;
 	margin: 20mm auto;
-	padding: $resume-gap;
+	padding: 40px;
 	background-color: $white;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -31,21 +31,6 @@ body {
 	align-items: center;
 	column-gap: $resume-gap;
 }
-
-// .resume__name {
-// 	position: relative;
-// 	display: inline-block;
-// 	&::before {
-// 		content: '';
-// 		height: 50%;
-// 		width: calc(100% + 20px);
-// 		position: absolute;
-// 		left: -10px;
-// 		bottom: -10px;
-// 		z-index: -1;
-// 		background-color: rgba($black, 0.05);
-// 	}
-// }
 
 .resume__position {
 	margin-bottom: 8px;
@@ -63,8 +48,14 @@ body {
 
 .resume__main {
 	display: grid;
-	grid-template-columns: 0.66fr 1.33fr;
+	grid-template-columns: 180px 1fr;
 	column-gap: $resume-gap;
+}
+
+.resume__column {
+	> :not(:last-child) {
+		margin-bottom: $resume-gap;
+	}
 }
 
 .module__heading {
@@ -72,11 +63,72 @@ body {
 	display: inline-block;
 }
 
-.module__list {
-	list-style-type: disc;
-	padding-left: 18px;
+.module__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&::marker {
+		color: rgba($black, 0.3);
+	}
 }
 
-.module__item::marker {
-	color: rgba($black, 0.4);
+.module__progress-bar {
+	position: relative;
+	height: 8px;
+	width: 120px;
+	border-radius: 2px;
+	border: 1px solid $black;
+}
+
+.module__progress {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: rgba($black, 0.3);
+}
+
+.module__progress--full {
+	width: 100%;
+}
+
+.module__progress--almost-full {
+	width: 80%;
+}
+
+.road-item {
+	position: relative;
+	padding: 0 0 20px 40px;
+	&::before {
+		content: '';
+		height: 8px;
+		width: 8px;
+		position: absolute;
+		top: 0;
+		left: 16px;
+		background-color: rgba($black, 0.3);
+		border-radius: 100vmax;
+	}
+	&::after {
+		content: '';
+		height: calc(100% - 16px);
+		width: 2px;
+		position: absolute;
+		top: 12px;
+		left: 18.5px;
+		background-color: rgba($black, 0.3);
+	}
+}
+
+.road-item--no-line {
+	&::after {
+		content: unset;
+	}
+}
+
+.road-item__top {
+	margin-bottom: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }

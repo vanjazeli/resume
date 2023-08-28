@@ -23,16 +23,20 @@
 }
 
 .text-large {
-	font-size: 20px;
-	line-height: 1.6;
-}
-
-.text-normal {
 	font-size: 16px;
 	line-height: 1.6;
 }
 
-.text-small {
+.text-normal {
 	font-size: 14px;
 	line-height: 1.7;
+}
+
+.text-small {
+	font-size: 12px;
+	line-height: 1.7;
+}
+
+.bold {
+	font-weight: 700;
 }
