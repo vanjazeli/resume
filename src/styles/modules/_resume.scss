@@ -29,7 +29,7 @@ body {
 
 .resume__top {
 	display: grid;
-	grid-template-columns: 160px 1fr;
+	grid-template-columns: 140px 1fr;
 	align-items: center;
 	column-gap: $resume-gap;
 }
@@ -39,7 +39,7 @@ body {
 }
 
 .resume__photo {
-	height: 160px;
+	height: 140px;
 }
 
 .resume__contact-icon {
