@@ -63,19 +63,30 @@ body {
 	display: inline-block;
 }
 
+.module__list {
+	padding-left: 14px;
+}
+
 .module__item {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	&::marker {
-		color: rgba($black, 0.3);
+	position: relative;
+	&::before {
+		content: '';
+		height: 2px;
+		width: 5px;
+		position: absolute;
+		top: 9px;
+		left: -12px;
+		background-color: rgba($black, 0.3);
 	}
 }
 
 .module__progress-bar {
 	position: relative;
 	height: 8px;
-	width: 120px;
+	width: 110px;
 	border-radius: 2px;
 	border: 1px solid $black;
 }
@@ -93,7 +104,7 @@ body {
 }
 
 .module__progress--almost-full {
-	width: 80%;
+	width: 85%;
 }
 
 .road-item {
