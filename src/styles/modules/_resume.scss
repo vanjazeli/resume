@@ -34,12 +34,17 @@ body {
 	column-gap: $resume-gap;
 }
 
+.resume__photo {
+	height: 140px;
+}
+
 .resume__position {
 	margin-bottom: 8px;
 }
 
-.resume__photo {
-	height: 140px;
+.resume__links {
+	display: grid;
+	grid-template-columns: 220px 230px;
 }
 
 .resume__contact-icon {
@@ -50,7 +55,7 @@ body {
 
 .resume__main {
 	display: grid;
-	grid-template-columns: 180px 1fr;
+	grid-template-columns: 1fr 180px;
 	column-gap: $resume-gap;
 }
 
