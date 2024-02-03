@@ -20,7 +20,7 @@ body {
 	// margin: 20mm auto;
 	padding: 30px;
 	background-color: $white;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	// box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .resume__section {
@@ -74,6 +74,21 @@ body {
 	padding-left: 14px;
 }
 
+.module__list--modified {
+	.module__item {
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	.module__item--no-margin {
+		margin-bottom: 0;
+	}
+}
+
+.module__list--spaced {
+	margin-top: 8px;
+}
+
 .module__item {
 	display: flex;
 	justify-content: space-between;
@@ -114,9 +129,13 @@ body {
 	width: 85%;
 }
 
+.module__project-name {
+	margin-bottom: 8px;
+}
+
 .road-item {
 	position: relative;
-	padding: 0 0 12px 40px;
+	padding: 0 0 8px 40px;
 	&::before {
 		content: '';
 		height: 8px;
