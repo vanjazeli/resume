@@ -17,10 +17,10 @@ body {
 .resume {
 	width: 210mm;
 	height: 297mm;
-	// margin: 20mm auto;
+	margin: 20mm auto;
 	padding: 30px;
 	background-color: $white;
-	// box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .resume__section {
@@ -132,6 +132,10 @@ body {
 
 .module__progress--almost-full {
 	width: 85%;
+}
+
+.module__progress--slightly-filled {
+	width: 30%;
 }
 
 .module__project-name {
