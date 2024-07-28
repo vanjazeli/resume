@@ -239,6 +239,18 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   font-weight: 700;
 }
 
+.opaque {
+  opacity: 0.7;
+}
+
+.green {
+  color: #2e8b57;
+}
+
+.blue {
+  color: #000dff;
+}
+
 @font-face {
   font-family: "svgicons";
   src: url("../assets/fonts/svgicons.eot");
@@ -286,11 +298,8 @@ body {
 .resume {
   width: 210mm;
   height: 297mm;
-  margin: 20mm auto;
-  padding: 40px;
+  padding: 30px;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .resume__section {
@@ -310,6 +319,7 @@ body {
 
 .resume__photo {
   height: 140px;
+  border-radius: 100vmax;
 }
 
 .resume__position {
@@ -330,7 +340,7 @@ body {
 
 .resume__main {
   display: grid;
-  grid-template-columns: 1fr 180px;
+  grid-template-columns: 1fr 200px;
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
@@ -347,6 +357,18 @@ body {
 
 .module__list {
   padding-left: 14px;
+}
+
+.module__list--modified .module__item {
+  display: block;
+  margin-bottom: 8px;
+}
+.module__list--modified .module__item--no-margin {
+  margin-bottom: 0;
+}
+
+.module__list--spaced {
+  margin-top: 8px;
 }
 
 .module__item {
@@ -369,6 +391,10 @@ body {
   top: 9px;
   left: -12px;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.module__item--no-flex {
+  display: block;
 }
 
 .module__progress-bar {
@@ -395,9 +421,17 @@ body {
   width: 85%;
 }
 
+.module__progress--slightly-filled {
+  width: 30%;
+}
+
+.module__project-name {
+  margin-bottom: 8px;
+}
+
 .road-item {
   position: relative;
-  padding: 0 0 12px 40px;
+  padding: 0 0 8px 40px;
 }
 .road-item::before {
   content: "";
