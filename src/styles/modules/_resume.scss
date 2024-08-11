@@ -75,6 +75,12 @@ body {
 	padding-left: 14px;
 }
 
+.module__list--flex-space {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
 .module__list--modified {
 	.module__item {
 		display: block;
